@@ -4,6 +4,8 @@ const bodyParser = require('body-parser');
 const shipPartsRouter = require('./ship-parts/ship-parts.route');
 const shipRouter = require('./ship/ship.route');
 const app = express();
+const cors = require('cors');
+app.use(cors());
 
 // Config 
     app.use( bodyParser.urlencoded({ extended: true }) )
