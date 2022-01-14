@@ -17,6 +17,7 @@ const shipSchema = new moongose.Schema({
         cannonQuantity: { min: Number, max: Number },
         crewMaxQuantity: Number,
         crew: [{}],
+        description: { type: String },
         _InventoryModule: {
             maxWeight: Number,
             items: []

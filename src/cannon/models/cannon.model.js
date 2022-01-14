@@ -5,6 +5,7 @@ const cannonSchema = new moongose.Schema({
     damage: { type: Number, required: true },
     ranking: { type: Number, required: true },
     range: { type: Number, required: true },
+    description: { type: String },
     modifiers: [{}],
 });
 
